@@ -1,0 +1,59 @@
+﻿@{
+    Layout = null;
+}
+@model JoJobsessed.Models.Send
+<html>
+<head>
+    <link href="~/css/tech_support.css" rel="stylesheet">
+    <title>Техподдержка</title>
+</head>
+<body>
+    <header>
+        <div class="container-borders">
+            <div class="header">
+                <div class="logo">n</div>
+                <div class="navigation">
+                    <a href="@Url.Action("main")">Главная</a>
+                    <a href="@Url.Action("catalog")">Каталог</a>
+                    <a href="@Url.Action("cart")">Корзина</a>
+                    <a href="@Url.Action("tech_support")">Техподдержка</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <div class="container-borders">
+                <div class="field">
+                    <form asp-antiforgery="true" asp-action="SendMail" asp-controller="home">
+                    <h2>Техподдержка</h2>
+                        <input type="text" asp-for="@Model.EMail" placeholder="ваш E-Mail" spellcheck="false">
+                        <span asp-validation-for="EMail"/>
+                        <input type="text" asp-for="@Model.Message" placeholder="Опишите проблему" spellcheck="false">
+                        <span asp-validation-for="Message"/>
+                    <button class="button">
+                        Отправить
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            ©Copyright 1987-2022 JoJobsessed.com™. Все права защищены.
+        </div>
+        <div class="contacts">
+            <div сlass="contact">
+                Телефон: 7 (900) 977 77 35
+            </div>
+            <div class="contact">
+                E-Mail: jojobsessed@mail.ru
+            </div>
+            <div class="contact">
+                Ул. Йошикаге, д. №4, с. №4
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px;
+    color: #fff; 
+    margin: 0;
+}
+.header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgba(43, 43, 43, 0.849);
+    border-radius: 10px 30px;
+    margin-top: 15px;
+}
+
+.logo {
+    font-family: 'Jojomix';
+    color: rgb(93, 0, 93);
+    font-size: 47px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.navigation {
+    padding-top: 25px;
+}
+
+.navigation a {
+    padding-right: 50px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 35px;
+    color: #fff; 
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    color: #bababa;
+    transition: 0.2s;
+}
+/*Container*/
+.container {
+    width: 100%;
+    height: 90vh;
+}
+
+.container-borders {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+/*Intro*/
+.intro {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Field*/
+.field {
+    height: 450px;
+    width: 400px;
+    background-color: rgba(43, 43, 43, 0.849);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 50px;
+    text-align: center;
+}
+
+.field input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px; 
+    color: #fff;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 300px;
+    margin: 30px auto;
+    padding: 5px;
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.field input:hover {
+    border-color: #bababa;
+    transition: 0.2s;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px; 
+    color: #fff;
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    color: #bababa;
+    border-color: rgb(255, 179, 251);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.link-reg {
+    font-size: 20px; 
+    color: #fff;
+}
+
+.link-reg a {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.link-reg a:hover{
+    color: rgb(255, 179, 251);
+    transition: 0.2s;
+}
+
+/*Footer*/
+.footer {
+    height: 150px;
+    background-color: #222222;
+    font-size: 15px;
+    text-align: center; 
+}
+
+.copyright {
+    padding-top: 15px;
+}
+
+.contacts {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    margin-top: 15px;
+    text-align: center;
+}

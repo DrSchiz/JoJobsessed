@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+@model JoJobsessed.Models.Login
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/autorization.css" />
+    <title>Авторизация</title>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <div class="container-borders">
+                <div class="field">
+                    <h2>Авторизация</h2>
+                    <form asp-action="autorization" asp-controller="home">
+                        <input type="text" asp-for="@Model.LoginUser" placeholder="Логин" spellcheck="false">
+                        <span asp-validation-for="LoginUser"></span>
+                        <input type="password" asp-for="@Model.PasswordUser" placeholder="Пароль">
+                        <span asp-validation-for="PasswordUser"></span>
+                        <button type="submit" href=""  class="button">
+                            Войти
+                        </button>
+                    </form>
+                    <div class="link-reg">
+                        <p>Нет аккаунта? <a href="@Url.Action("registration")">Зарегистрируйтесь!</a></p>
+                    </div>
+                    <div class="link-reg">
+                        <a href="@Url.Action("lostpassword")">Забыли пароль?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            ©Copyright 1987-2022 JoJobsessed.com™. Все права защищены.
+        </div>
+        <div class="contacts">
+            <div сlass="contact">
+                Телефон: 7 (900) 977 77 35
+            </div>
+            <div class="contact">
+                E-Mail: jojobsessed@mail.ru
+            </div>
+            <div class="contact">
+                Ул. Йошикаге, д. №4, с. №4
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+@model JoJobsessed.Models.User
+<html lang="en">
+<head>
+    <link href="~/css/registration.css" rel="stylesheet"/>
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <div class="container-borders">
+                <div class="field">
+                    <h2>Регистрация</h2>
+                    <form asp-action="registration" asp-controller="home">
+                    <input type="text" asp-for="@Model.PhoneNumberUser" placeholder="Телефон" spellcheck="false">
+                    <span asp-validation-for="PhoneNumberUser"></span>
+                    <input type="text" asp-for="@Model.EMailUser" placeholder="E-Mail" spellcheck="false">
+                    <span asp-validation-for="EMailUser"></span>
+                    <input type="text" asp-for="@Model.LoginUser" placeholder="Придумайте логин" spellcheck="false">
+                    <span asp-validation-for="LoginUser"></span>
+                    <input type="password" asp-for="@Model.PasswordUser" placeholder="Придумайте пароль">
+                    <span asp-validation-for="PasswordUser"></span>
+                    <button class="button">
+                        Создать аккаунт
+                    </button>
+                    </form>
+                    <div class="link-reg">
+                        <p>Имеется аккаунт? <a href="@Url.Action("autorization")">Авторизируйтесь!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            ©Copyright 1987-2022 JoJobsessed.com™. Все права защищены.
+        </div>
+        <div class="contacts">
+            <div сlass="contact">
+                Телефон: 7 (900) 977 77 35
+            </div>
+            <div class="contact">
+                E-Mail: jojobsessed@mail.ru
+            </div>
+            <div class="contact">
+                Ул. Йошикаге, д. №4, с. №4
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

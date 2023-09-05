@@ -1,0 +1,103 @@
+﻿@{
+    Layout = null;
+}
+<html lang="en">
+<head>
+    <link href="~/css/main.css" rel="stylesheet">
+    <title>Главная</title>
+</head>
+<body>
+    <header>
+        <div class="container-borders">
+            <div class="header">
+                <div class="logo">n</div>
+                <div class="navigation">
+                    <a href="@Url.Action("main")">Главная</a>
+                    <a href="@Url.Action("catalog")">Каталог</a>
+                    <a href="@Url.Action("cart")">Корзина</a>
+                    <a href="@Url.Action("tech_support")">Техподдержка</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <div class="container-borders">
+                <div class="description">
+                    <div class="description-inner">
+                        <div class="description-img">
+                        </div>
+                        <div class="description-text">
+                            Добро пожаловать в интернет-магазин одежды JoJobsessed!
+                        </div>
+                        <div class="description-text">
+                            Если вы дошли до этой страницы, значит вас точно можно назвать
+                            помешанным на ДжоДжо, и мы сделаем всё, что в наших силах,
+                            чтобы оправдать ваши ожидания от нашего магазина!
+                        </div>
+                        <div class="description-text">
+                            Мы торгуем качественнейшими копиями той одежды, которую носили ваши
+                            любимые герои из вселенной JoJo's Bizzare Adventure.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="section-intro">
+            <div class="container-borders">
+                <div class="new-products-text">
+                    Наши новинки:
+                </div>
+                <div class="new-products-description">
+                    <div class="clothes-description">
+                        <div class="clothes-description-text">
+                            <p>
+                                Комплект одежды "Какёин".
+                                Какёин Нориаки является одним из любимейших персонажей
+                                для многих фанатов ДжоДжо, и теперь мы даём вам возможность
+                                почувствовать себя этим героем! покупая данный комплект вместе
+                                с любой другой вещью из категории "Аксессуары" вы получаете персональную
+                                скидку 30% на 2 следующие покупки.<br />Подробнее в разделе <a href="@Url.Action("catalog")">Каталог</a>.
+                            </p>
+                        </div>
+                        <div class="clothes-description-img">
+                        </div>
+                    </div>
+                    <div class="clothes-description">
+                        <div class="clothes-description-img2">
+                        </div>
+                        <div class="clothes-description-text2">
+                            <p>
+                                Комплект одежды "Мэрайа".
+                                Хоть Мэрайа и продержалась на виду небольшой промежуток
+                                времени, а шуму в фан-сообществе она навела очень много.
+                                Теперь, купив данный комплект одежды, вы можете почувствовать себя
+                                очаровательной преспешницей Дио, особенно если вы 30-летний бородатый
+                                фанат ДжоДжо!<br />Подробнее в разделе <a href="@Url.Action("catalog")">Каталог</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="copyright">
+            ©Copyright 1987-2022 JoJobsessed.com™. Все права защищены.
+        </div>
+        <div class="contacts">
+            <div сlass="contact">
+                Телефон: 7(900)977-77-35
+            </div>
+            <div class="contact">
+                E-Mail: jojobsessed@mail.ru
+            </div>
+            <div class="contact">
+                Ул. Йошикаге, д. №4, с. №4
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

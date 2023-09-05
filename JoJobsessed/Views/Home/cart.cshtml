@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+}
+@model JoJobsessed.Models.Cart
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/cart.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <header>
+        <div class="container-borders">
+            <div class="header">
+                <div class="logo">n</div>
+                <div class="navigation">
+                    <a href="@Url.Action("main")">Главная</a>
+                    <a href="@Url.Action("catalog")">Каталог</a>
+                    <a href="@Url.Action("cart")">Корзина</a>
+                    <a href="@Url.Action("tech_support")">Техподдержка</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-borders">
+            <div class="cart-field">
+                @if(Model.CartLines.Count == 0) {
+                    <h1>Корзина пуста</h1>
+                }
+                else {
+                    @for (int i = 0; i < Model.CartLines.Count; i++){
+                        <p>
+                            @Model.CartLines[i].NameProduct
+                        </p>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copyright">
+            ©Copyright 1987-2022 JoJobsessed.com™. Все права защищены.
+        </div>
+        <div class="contacts">
+            <div сlass="contact">
+                Телефон: 7 (900) 977 77 35
+            </div>
+            <div class="contact">
+                E-Mail: jojobsessed@mail.ru
+            </div>
+            <div class="contact">
+                Ул. Йошикаге, д. №4, с. №4
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
